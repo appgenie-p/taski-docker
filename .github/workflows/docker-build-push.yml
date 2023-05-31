@@ -1,6 +1,9 @@
 # docker-build-push.yml
 on:
   workflow_call:
+
+jobs:
+  reusable_workflow_job:
     name: Build and push Docker image to DockerHub
     runs-on: ubuntu-latest
     steps:
