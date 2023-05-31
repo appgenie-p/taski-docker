@@ -43,7 +43,7 @@ jobs:
 
   build_backend_and_push_to_docker_hub:
     needs: tests
-    uses: ${{ github.workspace }}/.github/workflows/docker-build-push.yml
+    uses: ./.github/workflows/docker-build-push.yml
     with:
       IMAGE_PATH: backend
       IMAGE_NAME: taski_backend
@@ -67,13 +67,13 @@ jobs:
 
   build_frontend_and_push_to_docker_hub:
     needs: frontend_tests
-    uses: ${{ github.workspace }}/.github/workflows/docker-build-push.yml
+    uses: ./.github/workflows/docker-build-push.yml
     with:
       IMAGE_PATH: frontend
       IMAGE_NAME: taski_frontend
 
   build_gateway_and_push_to_docker_hub:
-    uses: ${{ github.workspace }}/.github/workflows/docker-build-push.yml
+    uses: ./.github/workflows/docker-build-push.yml
     with:
       IMAGE_PATH: gateway
       IMAGE_NAME: taski_gateway
