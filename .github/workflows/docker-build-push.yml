@@ -8,9 +8,9 @@ on:
       IMAGE_NAME:
         required: true
         type: string
-    secrets:
-      token:
-        required: true
+    # secrets:
+    #   token:
+    #     required: true
 
 jobs:
   reusable_workflow_job:
