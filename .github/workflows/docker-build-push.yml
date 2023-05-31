@@ -8,11 +8,7 @@ on:
       IMAGE_NAME:
         required: true
         type: string
-    secrets:
-      DOCKER_USERNAME:
-        required: true
-      DOCKER_PASSWORD:
-        required: true
+
 
 jobs:
   reusable_workflow_job:

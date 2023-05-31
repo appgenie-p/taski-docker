@@ -47,6 +47,8 @@ jobs:
     with:
       IMAGE_PATH: backend
       IMAGE_NAME: taski_backend
+    secrets: inherit
+    
 
   frontend_tests:
     runs-on: ubuntu-latest
@@ -71,9 +73,11 @@ jobs:
     with:
       IMAGE_PATH: frontend
       IMAGE_NAME: taski_frontend
+    secrets: inherit
 
   build_gateway_and_push_to_docker_hub:
     uses: ./.github/workflows/docker-build-push.yml
     with:
       IMAGE_PATH: gateway
       IMAGE_NAME: taski_gateway
+    secrets: inherit
