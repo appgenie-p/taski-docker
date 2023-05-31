@@ -132,3 +132,5 @@ dmypy.json
 /node_modules
 .vscode/
 .vscode/*
+main-with-template-example.yml
+template-example.yml
