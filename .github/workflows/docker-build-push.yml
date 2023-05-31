@@ -5,6 +5,9 @@ on:
       IMAGE_PATH:
         required: true
         type: string
+      IMAGE_NAME:
+        required: true
+        type: string
     secrets:
       token:
         required: true
@@ -28,4 +31,4 @@ jobs:
         with:
           context: ${{ github.workspace }}/${{ inputs.IMAGE_PATH }}
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ inputs.IMAGE_NAME }}:latest
