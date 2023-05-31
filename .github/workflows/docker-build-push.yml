@@ -2,7 +2,7 @@
 on:
   workflow_call:
     inputs:
-      config-path:
+      IMAGE_PATH:
         required: true
         type: string
     secrets:
