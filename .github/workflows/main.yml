@@ -48,7 +48,6 @@ jobs:
       IMAGE_PATH: backend
       IMAGE_NAME: taski_backend
     secrets: inherit
-    
 
   frontend_tests:
     runs-on: ubuntu-latest
