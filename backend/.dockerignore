@@ -1,0 +1,29 @@
+# Ignore development files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore static files
+/staticfiles/
+/media/
+
+# Ignore log files
+*.log
+
+# Ignore other files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Файл .dockerignore
+venv
+.git
+db.sqlite3
+.env
+.mypy_cache/
+db.sqlite3.bak
